@@ -3,15 +3,15 @@
 %bcond_without	doc	# Sphinx documentation
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
-%define 	module	jsonschema
+%define		module	jsonschema
 Summary:	An implementation of JSON Schema validation for Python 2
 Summary(pl.UTF-8):	Implementacja sprawdzania poprawności schematu JSON dla Pythona 2
 Name:		python-%{module}
 # keep 3.x here for python2 support
 Version:	3.2.0
-Release:	7
+Release:	8
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.python.org/simple/jsonschema/
